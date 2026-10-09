@@ -4,7 +4,14 @@
 \PassOptionsToPackage{nolangwarn}{glossaries-extra}
 \PassOptionsToPackage{nowarn}{tracklang}
 
+\makeatletter
+\AddToHook{package/IU8-14-terms-and-definitions/after}{%
+    \setkeys{glossaries.sty}{automake=false}%
+}
+\makeatother
+
 \documentclass[research]{BMSTU-IU8}
+\ExecuteBibliographyOptions{sorting=nty,sortlocale=ru_RU}
 
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
@@ -29,16 +36,16 @@
 \patchcmd{\makeBMSTUHeader}{0.85\textwidth}{0.78\textwidth}{}{}
 \patchcmd{\makeBMSTUHeader}{\includegraphics[scale=0.4]{inc/bmstu.png}}{\IfFileExists{inc/bmstu.png}{\includegraphics[scale=0.4]{inc/bmstu.png}}{\centering\textbf{МГТУ}}}{}{}
 
-\student{Рудовская А. Д.}
+\student{А. Д. Рудовская}
 \theme{Многосторонние конфиденциальные вычисления}
 \group{ИУ8-103-2026}
 
 \studentFullName{Рудовская Алиса Дмитриевна}
 \profile{20У733}
-\speciality{\parbox[t]{0.75\textwidth}{10.05.03 <<Информационная безопасность автоматизированных систем>>}}
-\specialization{\parbox[t]{0.75\textwidth}{10.05.03\_03 <<Создание автоматизированных систем в защищенном исполнении>>}}
-\supervisorWithDegree{профессор кафедры ИУ8 Ключарев Петр Георгиевич}
-\supervisor{Ключарев П. Г.}
+\speciality{\parbox[t]{0.75\textwidth}{10.05.03 <<Информационная безопасность \newline автоматизированных систем>>}}
+\specialization{\parbox[t]{0.75\textwidth}{10.05.03\_03 <<Создание автоматизированных систем \newline в защищенном исполнении>>}}
+\supervisorWithDegree{профессор кафедры ИУ8 Ключарев Петр \newline Георгиевич}
+\supervisor{П. Г. Ключарев}
 \researchConsultant{---}
 \designConsultant{---}
 \technologicalConsultant{---}
