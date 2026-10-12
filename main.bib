@@ -1,84 +1,85 @@
+% Порядок: сначала русскоязычные источники, затем иностранные, внутри групп по алфавиту
+% (presort задает группу, sortkey -- место внутри группы).
+
+% ===== Русскоязычные источники =====
+
 @article{01,
   presort      = {a},
-  sortkey      = {03},
+  sortkey      = {01},
+  langid       = {russian},
   author       = {Загартдинов, Б. Н. and Поляков, М. В.},
   title        = {Анализ реализации технологий конфиденциальных вычислений},
   journaltitle = {Вопросы кибербезопасности},
   year         = {2023},
   number       = {6 (58)},
-  pages        = {122--127}
-}
-
-@article{02,
-  presort      = {a},
-  sortkey      = {04},
-  author       = {Земцов, Д. С.},
-  title        = {Сравнительная оценка схем гомоморфного шифрования на основе эллиптической кривой для новых безопасных многосторонних вычислений},
-  journaltitle = {Инновации. Наука. Образование},
-  year         = {2024},
-  number       = {107},
-  note         = {Октябрь}
-}
-
-@article{03,
-  presort      = {a},
-  sortkey      = {05},
-  author       = {Румянцев, К. Е. and Хаджиева, Л. К.},
-  title        = {Конфиденциальные вычисления в условиях защищённой вычислительной среды},
-  journaltitle = {Вестник ГГНТУ. Технические науки},
-  year         = {2022},
-  volume       = {18},
-  number       = {4 (30)},
-  pages        = {31}
+  pages        = {122--127},
+  doi          = {10.21681/2311-3456-2023-6-122-127}
 }
 
 @article{04,
   presort      = {a},
-  sortkey      = {06},
-  author       = {Щербаков, А. Ю.},
+  sortkey      = {02},
+  langid       = {russian},
+  author       = {Запечников, С. В. and Щербаков, А. Ю.},
   title        = {Конфиденциальное машинное обучение на основе двусторонних протоколов безопасных вычислений},
   journaltitle = {Безопасность информационных технологий},
   year         = {2021},
   volume       = {28},
   number       = {4},
-  pages        = {39--51}
+  pages        = {39--51},
+  doi          = {10.26583/bit.2021.4.03}
 }
 
-@online{22,
+@article{02,
   presort      = {a},
-  sortkey      = {01},
-  author  = {{Facebook Research}},
-  title   = {CrypTen: репозиторий исходного кода и документация},
-  url     = {https://github.com/facebookresearch/CrypTen},
-  urldate = {2026-10-05}
+  sortkey      = {03},
+  langid       = {russian},
+  author       = {Земцов, Д. С.},
+  title        = {Сравнительная оценка схем гомоморфного шифрования на основе эллиптической кривой для новых безопасных многосторонних вычислений},
+  journaltitle = {Инновации. Наука. Образование},
+  date         = {2024-10},
+  number       = {107},
+  pages        = {214--224}
+
 }
 
-@online{21,
+@article{03,
   presort      = {a},
-  sortkey      = {02},
-  author  = {{TF Encrypted}},
-  title   = {TF Encrypted: репозиторий исходного кода и документация},
-  url     = {https://github.com/tf-encrypted/tf-encrypted},
-  urldate = {2026-10-05}
+  sortkey      = {04},
+  langid       = {russian},
+  author       = {Румянцев, К. Е. and Хаджиева, Л. К.},
+  title        = {Конфиденциальные вычисления в условиях защищенной вычислительной среды},
+  journaltitle = {Вестник ГГНТУ. Технические науки},
+  year         = {2022},
+  volume       = {18},
+  number       = {4 (30)},
+  pages        = {31--36},
+  doi          = {10.34708/GSTOU.2022.13.45.004}
 }
+
+% ===== Иностранные источники (по алфавиту) =====
 
 @article{05,
   presort      = {b},
   sortkey      = {01},
+  langid       = {english},
   author       = {Bao, H. and others},
   title        = {Secure multiparty computation protocol based on homomorphic encryption and its application in blockchain},
   journaltitle = {Heliyon},
   year         = {2024},
   volume       = {10},
-  number       = {14}
+  number       = {14},
+  pages        = {e34458}
 }
 
 @inproceedings{16,
   presort      = {b},
   sortkey      = {02},
+  langid       = {english},
   author    = {Beaver, D. and Micali, S. and Rogaway, P.},
   title     = {The round complexity of secure protocols},
   booktitle = {Proceedings of the 22nd Annual ACM Symposium on Theory of Computing},
+  location  = {New York},
   publisher = {ACM},
   year      = {1990},
   pages     = {503--513}
@@ -87,23 +88,25 @@
 @online{17,
   presort      = {b},
   sortkey      = {03},
+  langid       = {english},
   author  = {{Boston Women's Workforce Council}},
-  title   = {Report 2016},
-  location = {Boston},
+  title   = {Boston Women's Workforce Council Report 2016},
   year    = {2017},
   url     = {https://www.boston.gov/sites/default/files/document-file-09-2017/bwwcr-2016-new-report.pdf},
-  urldate = {2026-10-04},
-  note    = {City of Boston}
+  urldate = {2026-05-03}
 }
 
 @inproceedings{24,
   presort      = {b},
   sortkey      = {04},
+  langid       = {english},
   author    = {Cohen, R. and Lindell, Y.},
-  title     = {Fairness Versus Guaranteed Output Delivery in Secure Multiparty Computation},
-  booktitle = {Advances in Cryptology -- ASIACRYPT 2014},
+  title     = {Fairness versus guaranteed output delivery in secure multiparty computation},
+  booktitle = {Advances in Cryptology --- ASIACRYPT 2014},
   series    = {Lecture Notes in Computer Science},
   volume    = {8874},
+  location  = {Berlin and Heidelberg},
+  publisher = {Springer},
   year      = {2014},
   pages     = {466--485}
 }
@@ -111,16 +114,18 @@
 @online{18,
   presort      = {b},
   sortkey      = {05},
+  langid       = {english},
   author  = {{Cybernetica AS}},
-  title   = {Track Big Data for Governments and Education},
+  title   = {Track big data for governments and education},
   date    = {2021-07-07},
   url     = {https://cyber.ee/resources/case-studies/track-big-data-for-governments-and-education/},
-  urldate = {2026-10-04}
+  urldate = {2026-05-03}
 }
 
 @article{06,
   presort      = {b},
   sortkey      = {06},
+  langid       = {english},
   author       = {Evans, D. and Kolesnikov, V. and Rosulek, M.},
   title        = {A pragmatic introduction to secure multi-party computation},
   journaltitle = {Foundations and Trends in Privacy and Security},
@@ -130,65 +135,77 @@
   pages        = {70--246}
 }
 
-@online{07,
+@online{22,
   presort      = {b},
   sortkey      = {07},
+  langid       = {english},
+  author     = {{Facebook Research}},
+  title      = {CrypTen: a framework for privacy preserving machine learning},
+  titleaddon = {GitHub repository},
+  url        = {https://github.com/facebookresearch/CrypTen},
+  urldate    = {2026-05-03}
+}
+
+@online{07,
+  presort      = {b},
+  sortkey      = {08},
+  langid       = {english},
   author       = {Liao, T. and Li, T. and Nadkarni, P.},
   title        = {A survey on secure machine learning},
-  year         = {2025},
+  date         = {2025-05-21},
   eprint       = {2505.15124},
-  eprinttype   = {arXiv}
+  eprinttype   = {arXiv},
+  url          = {https://arxiv.org/abs/2505.15124},
+  urldate      = {2026-05-03}
 }
 
 @article{08,
   presort      = {b},
-  sortkey      = {08},
+  sortkey      = {09},
+  langid       = {english},
   author       = {Lindell, Y.},
   title        = {Secure multiparty computation},
   journaltitle = {Communications of the ACM},
-  year         = {2020},
+  year         = {2021},
   volume       = {64},
   number       = {1},
   pages        = {86--96}
 }
 
-@online{19,
-  presort      = {b},
-  sortkey      = {11},
-  author  = {{MPC Alliance}},
-  title   = {Industry Leaders Launch MPC Alliance to Elevate Security and Privacy of Online Services},
-  date    = {2019-11-13},
-  url     = {https://www.mpcalliance.org/news},
-  urldate = {2026-10-04}
-}
-
-@online{20,
-  presort      = {b},
-  sortkey      = {09},
-  author     = {Mohassel, P. and Rindal, P.},
-  title      = {ABY3: A Mixed Protocol Framework for Machine Learning},
-  year       = {2018},
-  eprint     = {2018/403},
-  eprinttype = {Cryptology ePrint Archive},
-  url        = {https://eprint.iacr.org/2018/403},
-  urldate    = {2026-10-05}
-}
-
-@online{23,
+@inproceedings{20,
   presort      = {b},
   sortkey      = {10},
+  langid       = {english},
+  author     = {Mohassel, P. and Rindal, P.},
+  title      = {ABY3: A mixed protocol framework for machine learning},
+  booktitle  = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security},
+  location   = {New York},
+  publisher  = {ACM},
+  year       = {2018},
+  pages      = {35--52},
+  url        = {https://eprint.iacr.org/2018/403},
+  urldate    = {2026-05-03}
+}
+
+@inproceedings{23,
+  presort      = {b},
+  sortkey      = {11},
+  langid       = {english},
   author     = {Mohassel, P. and Zhang, Y.},
-  title      = {SecureML: A System for Scalable Privacy-Preserving Machine Learning},
+  title      = {SecureML: A system for scalable privacy-preserving machine learning},
+  booktitle  = {2017 IEEE Symposium on Security and Privacy},
+  location   = {New York},
+  publisher  = {IEEE},
   year       = {2017},
-  eprint     = {2017/396},
-  eprinttype = {Cryptology ePrint Archive},
+  pages      = {19--38},
   url        = {https://eprint.iacr.org/2017/396},
-  urldate    = {2026-10-05}
+  urldate    = {2026-05-03}
 }
 
 @article{09,
   presort      = {b},
   sortkey      = {12},
+  langid       = {english},
   author       = {Morales, D. and Agudo, I. and Lopez, J.},
   title        = {Private set intersection: A systematic literature review},
   journaltitle = {Computer Science Review},
@@ -200,31 +217,62 @@
 @thesis{10,
   presort      = {b},
   sortkey      = {13},
+  langid       = {english},
   author      = {Moreira, P. G.},
-  title       = {Secure Multi-party Computation: A Survey},
+  title       = {Secure multi-party computation: A survey},
+  subtitle    = {A comparison of secure multi-party computation protocols and other techniques for computing on encrypted data},
+  type        = {Bachelor's thesis},
   institution = {Delft University of Technology},
-  type        = {Dissertation},
-  year        = {2025}
+  location    = {Delft},
+  year        = {2025},
+  url         = {https://repository.tudelft.nl/file/File_2a1644c0-8798-4fb9-909e-76821e198993},
+  urldate     = {2026-05-03}
+}
+
+@online{19,
+  presort      = {b},
+  sortkey      = {14},
+  langid       = {english},
+  author  = {{MPC Alliance}},
+  title   = {Industry leaders launch MPC Alliance to elevate security and privacy of online services},
+  date    = {2019-11-13},
+  url     = {https://www.globenewswire.com/news-release/2019/11/13/1946302/0/en/Industry-Leaders-Launch-MPC-Alliance-to-Elevate-Security-and-Privacy-of-Online-Services.html},
+  urldate = {2026-05-03}
 }
 
 @article{11,
   presort      = {b},
-  sortkey      = {14},
+  sortkey      = {15},
+  langid       = {english},
   author       = {Naresh, V. S. and Venkata Raju, A. and Srinivasa Rao, O.},
-  title        = {Secure Multiparty Computation for Privacy-Preserving Machine Learning in Healthcare: A Comprehensive Survey},
-  journaltitle = {Wiley Interdisciplinary Reviews: Computational Statistics},
+  title        = {Secure multiparty computation for privacy-preserving machine learning in healthcare: A comprehensive survey},
+  journaltitle = {WIREs Computational Statistics},
   year         = {2025},
   volume       = {17},
   number       = {3},
-  pages        = {e70046}
+  pages        = {e70046},
+  doi          = {10.1002/wics.70046}
+}
+
+@online{21,
+  presort      = {b},
+  sortkey      = {16},
+  langid       = {english},
+  author     = {{TF Encrypted}},
+  title      = {TF Encrypted: a framework for confidential machine learning on encrypted data in TensorFlow},
+  titleaddon = {GitHub repository},
+  url        = {https://github.com/tf-encrypted/tf-encrypted},
+  urldate    = {2026-05-03}
 }
 
 @inproceedings{15,
   presort      = {b},
-  sortkey      = {15},
+  sortkey      = {17},
+  langid       = {english},
   author    = {Yao, A. C.},
   title     = {How to generate and exchange secrets},
   booktitle = {Proceedings of the 27th Annual Symposium on Foundations of Computer Science},
+  location  = {New York},
   publisher = {IEEE},
   year      = {1986},
   pages     = {162--167}
@@ -232,10 +280,12 @@
 
 @inproceedings{14,
   presort      = {b},
-  sortkey      = {16},
+  sortkey      = {18},
+  langid       = {english},
   author    = {Yao, A. C.},
   title     = {Protocols for secure computations},
   booktitle = {Proceedings of the 23rd Annual Symposium on Foundations of Computer Science},
+  location  = {New York},
   publisher = {IEEE},
   year      = {1982},
   pages     = {160--164}
@@ -243,23 +293,26 @@
 
 @article{12,
   presort      = {b},
-  sortkey      = {17},
+  sortkey      = {19},
+  langid       = {english},
   author       = {Zhang, S. and others},
   title        = {Efficient and secure multi-party computation protocol supporting deep learning},
   journaltitle = {Cybersecurity},
   year         = {2025},
   volume       = {8},
-  number       = {1},
-  pages        = {46}
+  pages        = {46},
+  doi          = {10.1186/s42400-024-00343-4}
 }
 
 @article{13,
   presort      = {b},
-  sortkey      = {18},
+  sortkey      = {20},
+  langid       = {english},
   author       = {Zhou, I. and others},
   title        = {Secure multi-party computation for machine learning: A survey},
   journaltitle = {IEEE Access},
   year         = {2024},
   volume       = {12},
-  pages        = {53881--53899}
+  pages        = {53881--53899},
+  doi          = {10.1109/ACCESS.2024.3388992}
 }
